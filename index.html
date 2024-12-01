@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joiner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <h1><span class="emoji">🔗</span> Joiner</h1>
+            <a href="https://github.com/nerdbene/Sentence_joiner" target="_blank" class="github-btn">
+                <i class="fab fa-github"></i> Source Code
+            </a>
+        </div>
+        <div class="nav-right">
+            <span class="author">by Bene - 2024</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="input-section">
+            <div class="sentence-inputs">
+                <h2>Enter Your Sentences:</h2>
+                <div class="sentence-list">
+                    <div class="sentence-input">
+                        <input type="text" placeholder="Enter sentence 1" maxlength="100">
+                        <span class="split-preview"></span>
+                    </div>
+                </div>
+                <button id="addSentenceBtn" class="btn add-sentence">Add Another Sentence ➕</button>
+            </div>
+            <div class="controls">
+                <button id="splitBtn" class="btn primary">Split Sentences! ✂️</button>
+                <button id="resetBtn" class="btn reset">Reset 🔄</button>
+            </div>
+        </div>
+
+        <div class="game-board">
+            <div class="sentence-halves left-halves">
+                <!-- Left halves will be added here -->
+            </div>
+            <div class="sentence-halves right-halves">
+                <!-- Right halves will be added here -->
+            </div>
+        </div>
+
+        <div class="completed-sentences">
+            <!-- Matched sentences will appear here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
